@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/header';
+import Footer from './components/footer';
+
+function createAlert() {
+      alert('Great Job');
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header info="Header Info"/>
+      {/* <header className="App-header"> */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +24,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        <Footer message="Made by Kris"
+        alert={createAlert}/>
+      {/* </header> */}
     </div>
   );
 }
