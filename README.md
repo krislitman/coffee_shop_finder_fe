@@ -1,12 +1,42 @@
-# Getting Started with Create React App
+# Coffee Shop Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### React Application
+==============
 
-## Available Scripts
+![Special_Agent_Dale_Cooper](https://media.giphy.com/media/26mkhIj7fJHjq0JMI/giphy.gif)
 
-In the project directory, you can run:
+<!-- [![CircleCI](https://circleci.com/gh/krislitman/Song-Discovery.svg?style=shield)](https://circleci.com/gh/krislitman/Song-Discovery) -->
 
-### `yarn start`
+© Kris Litman ([LinkedIn](https://www.linkedin.com/in/kris-litman/)) 2021<br> (Creator)
+
+Table of Contents
+=================
+
+* [Introduction](#introduction)
+* [Key Features](#key_features)
+* [Installation](#installation)
+* [Running the Test Suite](#running_the_test_suite)
+* [Built With](#built_with)
+* [Versioning](#versioning)
+* [Acknowledgements](#acknowledgements)
+
+
+## Introduction
+
+React frontend for finding Coffee Shops near you. User can log in, see Coffee Shops near their zipcode, add Favorite Shops with a rating. Also ability to filter out large chain Coffee Shops like Starbucks, Dunkin, etc.
+
+## Key Features
+
+## Installation
+
+To receive a working copy of the application on your computer, first you will need to
+fork and clone this repository.
+
+From the project directory you can run:
+
+```
+$ yarn start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,57 +44,33 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+## Running the Test Suite
+
+```
+$ yarn test
+```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `yarn build`
+<ul>
+<li>
+  React
+</li>
+<li>
+  Yarn
+</li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Versioning
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<ul>
+<li>
+  Yarn 1.22.10
+</li>
+<li>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgements
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Giphy](https://giphy.com/)
