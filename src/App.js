@@ -1,34 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import { Header } from './components/header';
-import Footer from './components/footer';
+import './App.css'
+import React from 'react'
+import  Header  from './components/header'
+import Footer from './components/footer'
+import MainContent from './components/mainContent'
 
-function createAlert() {
-      alert('Great Job');
-}
+class App extends React.Component {
+  render() {
 
-function App() {
-  return (
-    <div className="App">
-      <Header info="Header Info"/>
-      {/* <header className="App-header"> */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Footer message="Made by Kris"
-        alert={createAlert}/>
-      {/* </header> */}
-    </div>
-  );
+    function newAlert() {
+      return(
+        alert('You clicked the footer')
+      )
+    }
+    return(
+      <React.Fragment>
+        <Header />
+        <MainContent />
+        <Footer alert={newAlert}/>
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;

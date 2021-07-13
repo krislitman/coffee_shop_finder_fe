@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Footer extends Component {
   render() {
     return (
             <React.Fragment>
               <h2 onClick={this.props.alert}>
-                This is a footer
+                 Footer
               </h2>
               <h4>{this.props.message}</h4>
             </React.Fragment>
@@ -13,4 +13,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default Footer

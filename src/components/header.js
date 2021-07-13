@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-function Header(props) {
-  return (
-          <React.Fragment>
-             <h1>{props.info}</h1>
-          </React.Fragment>
-         );
+class Header extends React.Component {
+   render() {
+      return(
+         <React.Fragment>
+            <h1>Header</h1>
+         </React.Fragment>
+      )
+   }
 }
 
-export { Header };
+export default Header
