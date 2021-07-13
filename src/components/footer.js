@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
             <React.Fragment>
             <br></br>
-              <p align='center'>2021 - by Kris Litman</p>
+              <p align='center'>2021 - © Kris Litman</p>
             </React.Fragment>
     )
   }
