@@ -6,17 +6,11 @@ import MainContent from './components/mainContent'
 
 class App extends React.Component {
   render() {
-
-    function newAlert() {
-      return(
-        alert('You clicked the footer')
-      )
-    }
     return(
       <React.Fragment>
         <Header />
-        <MainContent />
-        <Footer alert={newAlert}/>
+          <MainContent />
+        <Footer />
       </React.Fragment>
     )
   }

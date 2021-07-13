@@ -4,7 +4,7 @@ class Header extends React.Component {
    render() {
       return(
          <React.Fragment>
-            <h1>Header</h1>
+            <h1 align="center">Coffee Shop Finder</h1>
          </React.Fragment>
       )
    }

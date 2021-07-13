@@ -4,10 +4,8 @@ class Footer extends Component {
   render() {
     return (
             <React.Fragment>
-              <h2 onClick={this.props.alert}>
-                 Footer
-              </h2>
-              <h4>{this.props.message}</h4>
+            <br></br>
+              <p align='center'>2021 - by Kris Litman</p>
             </React.Fragment>
     )
   }
