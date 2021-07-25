@@ -1,3 +1,21 @@
 .App {
   text-align: center;
+	min-height: 100vh;
+	background-color: #686963;
+	padding: 20px;
+}
+.layout{
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	background-color: #686963;
+	color: #FAFAFA;
+}
+
+.AppHeader {
+	color: #FAFAFA;
+}
+
+.body {
+	background-color: #686963;
 }
