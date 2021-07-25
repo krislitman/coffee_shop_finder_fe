@@ -9,14 +9,11 @@
   grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
 	background-color: #686963;
+	color: #FAFAFA;
 }
 
-.Header {
-	background-color: #686963;
-}
-
-.MainContent{
-	background-color: #686963;
+.AppHeader {
+	color: #FAFAFA;
 }
 
 .body {
