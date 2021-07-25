@@ -1,0 +1,10 @@
+Color Codes!
+
+Lightest to Darkest:
+
+FAFAFA - Cultured (White)
+E3F2FD - Alice Blue
+8AA29E - Morning Blue
+DB5461 - Red
+686963 - Dim Gray
+
