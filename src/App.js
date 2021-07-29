@@ -10,13 +10,8 @@ function App() {
 		<React.Fragment>
 		<div className='App'>
 			<header className='AppHeader'>
-			<h1>Coffee Shop Finder</h1>
-				<ZipcodeForm/>
-				{/* <form className='yelp_search'>
-					<label for='zipcode'>Input your zipcode!</label><br></br>
-					<input id= 'zipcode' type='text' placeholder='zipcode'></input><br></br>
-					<button>Submit</button>
-				</form> */}
+				<h1>Coffee Shop Finder</h1>
+					<ZipcodeForm/>
 			</header>
 		<div className='layout'>
 	 		<div>Coffee Shops</div>
