@@ -19,3 +19,12 @@
 .body {
 	background-color: #686963;
 }
+
+.yelp_search{
+	padding: 20px;
+	margin-left: 400px;
+	margin-right: 400px;
+	border-color: #FAFAFA;
+	border-radius: 2px;
+	border-style: solid;
+}
