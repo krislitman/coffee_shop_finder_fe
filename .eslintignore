@@ -1,0 +1,4 @@
+# Linter ignores these file types:
+
+*.css
+*.svg
