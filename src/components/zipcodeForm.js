@@ -1,15 +1,26 @@
 import React from 'react'
+import '../zipcodeForm.css'
 
 class ZipcodeForm extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      zipcode: '',
+    }
+  }
+
   render() {
     return (
-      <React.Fragment>
-        <form align="center" className="yelp_search">
-          <label for='zipcode'>Enter your zipcode:</label><br></br>
-          <input type='text' id='zipcode' placeholder='Enter your zipcode' /><br></br>
-          <input type='submit' value='Submit'/>
+        <form>
+          <input
+            type='text'
+            placeholder='Enter your zipcode'
+            name='zipcode'
+            value={this.state.zipcode}
+          /><br></br>
+
+          <button>☕️</button>
         </form>
-      </React.Fragment>
     )
   }
 }
