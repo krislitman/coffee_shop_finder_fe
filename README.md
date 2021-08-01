@@ -30,12 +30,12 @@ React frontend for finding Coffee Shops near you. User can log in, see Coffee Sh
 ## Installation
 
 To receive a working copy of the application on your computer, first you will need to
-fork and clone this repository.
+fork and clone this repository. Make sure to create a `.env` file at the root of the repository for all environment variables.
 
 From the project directory you can run:
 
 ```
-$ yarn start
+$ npm start
 ```
 
 Runs the app in the development mode.\
@@ -66,6 +66,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ## Versioning
 
 <ul>
+<li>
+  Npm 7.15.1
+</li>
 <li>
   Yarn 1.22.10
 </li>
