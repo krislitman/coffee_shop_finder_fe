@@ -1,9 +1,13 @@
-import React from 'react'
+// eslint-disable-next-line
+import React, { useState } from 'react'
 import '../zipcodeForm.css'
 
+// eslint-disable-next-line
+const zipcodeAPI = 'https://www.zipcodeapi.com/rest/{REACT_APP_ZIPCODE_API_KEY}/info.json/{zipcode}/degrees'
+
 class ZipcodeForm extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       zipcode: '',
     }
@@ -12,17 +16,27 @@ class ZipcodeForm extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({zipcode: event.target.value})
+    this.setState({
+      [event.target.name]: event.target.value
+    })
   }
 
   handleSubmit(event) {
-    alert('Zip code submitted: ' + this.state.zipcode)
+    console.log("Click")
+    this.setState({
+      zipcode: event.target.value
+    })
     event.preventDefault()
   }
 
+  // componentDidMount() {
+  //   fetch(zipcodeAPI)
+  //     .then(response => response.json())
+  // }
+
   render() {
     return (
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <input
             type='text'
             placeholder='Enter your zipcode'
@@ -31,11 +45,10 @@ class ZipcodeForm extends React.Component {
             onChange={this.handleChange}
           /><br></br>
 
-          <button>☕️</button>
+          <button onClick={this.handleSubmit}>☕️</button>
         </form>
     )
   }
 }
 
 export default ZipcodeForm
-
