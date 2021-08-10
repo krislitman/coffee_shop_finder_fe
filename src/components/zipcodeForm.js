@@ -1,3 +1,4 @@
+
 import React from 'react'
 import axios from 'axios'
 
@@ -38,8 +39,8 @@ class ZipcodeForm extends React.Component {
         <form align="center">
           <input type='text' id='zipcode' placeholder='Enter your zipcode' /><br></br>
           <button onClick={this.yelpCall}>☕️</button>
-        </form>
-      </React.Fragment>
+  
+        </React.Fragment>
     )
   }
 }

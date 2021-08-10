@@ -2,7 +2,6 @@
   text-align: center;
 	min-height: 100vh;
 	background-color: #686963;
-	padding: 20px;
 }
 .layout{
 	display: grid;
@@ -18,4 +17,12 @@
 
 .body {
 	background-color: #686963;
+}
+
+.yelp_search{
+	margin-left: 400px;
+	margin-right: 400px;
+	border-color: #FAFAFA;
+	border-radius: 2px;
+	border-style: solid;
 }

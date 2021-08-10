@@ -7,9 +7,11 @@ import ZipcodeForm from './components/zipcodeForm'
 
 function App() {
 	return (
+		<React.Fragment>
 		<div className='App'>
 			<header className='AppHeader'>
 				<h1>Coffee Shop Finder</h1>
+					<ZipcodeForm/>
 			</header>
 			<ZipcodeForm />
 		<div className='layout'>
@@ -17,6 +19,7 @@ function App() {
 	   	<div>Coffee Shop Details</div>
 			</div>
 		</div>
+		</React.Fragment>
 	);
 }
 

@@ -13,7 +13,7 @@ const routing = (
   </BrowserRouter>
 );
 
-ReactDOM.render( 
+ReactDOM.render(
   routing,
   document.getElementById('root')
 );
