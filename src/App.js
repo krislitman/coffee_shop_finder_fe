@@ -1,9 +1,9 @@
 import './App.css'
 import React from 'react'
+import ZipcodeForm from './components/zipcodeForm'
 //import  Header  from './components/header'
 //import Footer from './components/footer'
 //import MainContent from './components/mainContent'
-import ZipcodeForm from './components/zipcodeForm'
 
 function App() {
 	return (
@@ -13,6 +13,7 @@ function App() {
 				<h1>Coffee Shop Finder</h1>
 					<ZipcodeForm/>
 			</header>
+			<ZipcodeForm />
 		<div className='layout'>
 	 		<div>Coffee Shops</div>
 	   	<div>Coffee Shop Details</div>

@@ -1,52 +1,46 @@
-// eslint-disable-next-line
-import React, { useState } from 'react'
-import '../zipcodeForm.css'
 
-// eslint-disable-next-line
-const zipcodeAPI = 'https://www.zipcodeapi.com/rest/{REACT_APP_ZIPCODE_API_KEY}/info.json/{zipcode}/degrees'
+import React from 'react'
+import axios from 'axios'
 
 class ZipcodeForm extends React.Component {
-  constructor() {
+  constructor(){
     super()
     this.state = {
-      zipcode: '',
+      isLoading: false,
+      coffeeShops: [],
     }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleChange(event) {
+  componentDidMount(){
+   const Key = process.env.REACT_APP_ZIPCODE_API_KEY
+   const response = axios.get('/v3/businesses/search', {
+     params: {
+      location: 33602,
+      categories: 'coffee',
+      sort_by: 'rating',
+   },
+   headers: {
+    Authorization: `${Key}`,
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET',
+    'Access-Control-Allow-Headers': 'Content-Type',
+   },
+  })
+    const data = response.data
     this.setState({
-      [event.target.name]: event.target.value
+      isLoading: true,
+      coffeeShops: data,
     })
   }
-
-  handleSubmit(event) {
-    console.log("Click")
-    this.setState({
-      zipcode: event.target.value
-    })
-    event.preventDefault()
-  }
-
-  // componentDidMount() {
-  //   fetch(zipcodeAPI)
-  //     .then(response => response.json())
-  // }
 
   render() {
     return (
-        <form>
-          <input
-            type='text'
-            placeholder='Enter your zipcode'
-            name='zipcode'
-            value={this.state.zipcode}
-            onChange={this.handleChange}
-          /><br></br>
-
-          <button onClick={this.handleSubmit}>☕️</button>
-        </form>
+      <React.Fragment>
+        <form align="center">
+          <input type='text' id='zipcode' placeholder='Enter your zipcode' /><br></br>
+          <button onClick={this.yelpCall}>☕️</button>
+  
+        </React.Fragment>
     )
   }
 }
